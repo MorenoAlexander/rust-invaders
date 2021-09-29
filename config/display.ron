@@ -1,4 +1,4 @@
 (
-    title: 'Rust Invaders',
+    title: "Rust Invaders",
     dimensions: Some((500,500))
 )

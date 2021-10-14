@@ -35,7 +35,8 @@ fn main() -> amethyst::Result<()> {
             .with_clear([0.10196,0.1,0.11765, 1.0])
         )
         .with_plugin(RenderPbr3D::default())
-    )?;
+    )?
+        .with_bundle(TransformBundle::new())?;
 
     let mut game = Application::new(assets_dir,rust_invaders::RustInvaders::default(), game_data)?;
 
